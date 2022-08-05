@@ -1,0 +1,78 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  min-height: 100vh;
+  background-color: #dbe4f0;
+}
+
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  /* background-color: #999; */
+}
+
+.card {
+  margin-top: 32px;
+  width: 600px;
+  background-color: #fff;
+  padding: 8px 32px 32px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.signup__form .form-input {
+  height: 42px;
+  padding: 0px 8px;
+  border: 1px solid #acacac;
+  border-radius: 3px;
+  width: 100%;
+  outline-color: teal;
+  font-size: 14px;
+  transition: 0.3s all ease;
+  /* max-width: 300px; */
+}
+
+.signup__form .submit-btn {
+  height: 36px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  font-size: 14px;
+  margin: 8px 0px;
+  border-radius: 2px;
+}
+
+.signup__form .submit-btn:hover {
+  background-color: rgb(1, 146, 146);
+}
+
+p {
+  margin: 0px;
+  display: inline-block;
+}
+.error-msg {
+  color: #bf1650;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: unset;
+    min-width: 320px;
+    padding: 8px 16px;
+  }
+
+  .App {
+    height: 100%;
+  }
+}

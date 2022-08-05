@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  /* background-color: #999; */
+}
+
+.form .form-input {
+  height: 42px;
+  padding: 0px 8px;
+  border: 1px solid #acacac;
+  border-radius: 3px;
+  width: 100%;
+  outline-color: teal;
+  font-size: 14px;
+  transition: 0.3s all ease;
+  /* max-width: 300px; */
+}
+
+.form .submit-btn {
+  height: 36px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  font-size: 14px;
+  margin: 8px 0px;
+  border-radius: 2px;
+}
+
+.form .submit-btn:hover {
+  background-color: rgb(0, 104, 104);
+}
+
+.error-msg {
+  color: #bf1650;
+}
+
+.error-msg p {
+  margin: 0px;
+  display: inline-block;
+}
+
+.error-msg p::first-letter {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: unset;
+    min-width: 320px;
+    padding: 8px 16px;
+  }
+
+  .App {
+    height: 100%;
+  }
+}
