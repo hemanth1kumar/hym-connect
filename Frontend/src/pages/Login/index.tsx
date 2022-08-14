@@ -1,37 +1,21 @@
-import { useForm } from 'react-hook-form';
+import { FieldValues, useForm } from 'react-hook-form';
 import React from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+
 import './styles.css';
+
 import Form from '../../components/Form';
 
-interface FormInputs {
-  name: string;
-  email: string;
-  password: string;
-  conf_password: string;
-}
-
 const Fields = {
-  Name: {
-    placeholder: 'Name',
-    field: 'name',
-    type: 'text',
-  },
   Email: {
-    placeholder: 'Email',
+    placeholder: 'Username',
     field: 'email',
     type: 'email',
-    invalidErrorMsg: 'Invalid Email Address',
   },
   Password: {
     placeholder: 'Password',
     field: 'password',
-    type: 'password',
-  },
-  'Confirm Password': {
-    placeholder: 'Confirm Password',
-    field: 'confirm password',
     type: 'password',
   },
 };
@@ -54,11 +38,13 @@ const Login = (): JSX.Element => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormInputs>({
+  } = useForm<FieldValues>({
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data): void => console.log(data);
+  const onSubmit = (data): void => {
+    console.log(data);
+  };
 
   return (
     <div className="card login_card">

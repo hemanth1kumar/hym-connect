@@ -1,34 +1,15 @@
 import React from 'react';
-import {
-  UseFormRegister,
-} from 'react-hook-form';
+import { UseFormRegister, FieldValues } from 'react-hook-form';
 import './styles.css';
 
 interface Props {
-  onSubmit:React.FormEventHandler<HTMLFormElement>;
+  onSubmit: React.FormEventHandler<HTMLFormElement>;
   Fields: {};
   errors: {};
-  register: UseFormRegister<{
-    name: string,
-    password: string,
-    conf_password: string,
-    email: string
-}>;
+  register: UseFormRegister<FieldValues>;
 }
 
-const Form = ({
-  onSubmit,
-  Fields,
-  errors,
-  register
-}: Props): JSX.Element => {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  // } = useForm<FormInputs>({
-  //   resolver: yupResolver(schema),
-  // });
+const Form = ({ onSubmit, Fields, errors, register }: Props): JSX.Element => {
   console.log('form render');
 
   return (

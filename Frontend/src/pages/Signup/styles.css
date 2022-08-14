@@ -15,15 +15,6 @@
   /* background-color: #999; */
 }
 
-.card {
-  margin-top: 32px;
-  width: 600px;
-  background-color: #fff;
-  padding: 8px 32px 32px;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
 .signup__form .form-input {
   height: 42px;
   padding: 0px 8px;

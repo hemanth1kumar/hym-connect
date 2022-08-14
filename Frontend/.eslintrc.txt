@@ -56,6 +56,13 @@
     "react/jsx-props-no-spreading": "warn",
     "react/jsx-one-expression-per-line": "off",
     "object-curly-spacing": "warn",
+    "no-shadow": "off",
+    "react/jsx-wrap-multilines": "off",
+    "object-curly-newline": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/self-closing-comp": "off",
+    "react/jsx-closing-tag-location": "off",
     "no-console": "off" // turn off for now, turn on in prod
   },
   "overrides": [

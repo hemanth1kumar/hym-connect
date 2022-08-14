@@ -8,14 +8,22 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 
 #root {
-  min-height: 100vh;
+  min-height: calc(100vh - 166px);
 }
 
 .card {
-  margin-top: 32px;
   width: 600px;
   background-color: #fff;
   padding: 8px 32px 32px;
